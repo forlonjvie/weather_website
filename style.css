@@ -1,0 +1,95 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
+    background: #222;
+    background-image: url(https://source.unsplash.com/random/?city,night);
+    background-size: cover; /* Added to cover the entire background */
+    font-size: 120%;
+}
+
+
+.card {
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 40px;
+    max-width: 420px;
+    width: 100%;
+    margin: 1em;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button {
+    background: #7c7c7c2b;
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 46px;
+    width: 46px;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+h1.temp {
+    margin: 0;
+    margin-bottom: .25em;
+}
+
+input.search-bar {
+    margin: 0.5em;
+    padding: 0.5em 1em;
+    outline: none;
+    border-radius: 18px;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+}
+
+button:hover {
+    background: #7c7c7c6b;
+}
+
+input.search-bar {
+    margin: 0.5em;
+    padding: 0.5em 1em;
+    outline: none;
+    border-radius: 18px;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 120%;
+    width: calc(100% - 100px);
+}
+
+.description {
+    text-transform: capitalize;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.weather.loading{
+    visibility: hidden;
+    max-height: 0px;
+    position: relative;
+}
+
+.weather.loading:after{
+    visibility: visible;
+    
+    color: white;
+    position: absolute;
+    top: 0;
+    left:20px;
+}
