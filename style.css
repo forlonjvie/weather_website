@@ -6,14 +6,14 @@ body {
     justify-content: center;
     margin: 0;
     background: #222;
-    background-image: url(https://source.unsplash.com/random/?city,night);
-    background-size: cover; /* Added to cover the entire background */
+    background-size: cover; /* Ensure the background image covers the entire screen */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
     font-size: 120%;
 }
 
-
 .card {
-    background: #000000d0;
+    background: rgba(0, 0, 0, 0.81);
     color: white;
     padding: 2em;
     border-radius: 40px;
@@ -21,13 +21,15 @@ body {
     width: 100%;
     margin: 1em;
 }
-.search{
+
+.search {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 button {
-    background: #7c7c7c2b;
+    background: rgba(124, 124, 124, 0.17);
     margin: 0.5em;
     border-radius: 50%;
     border: none;
@@ -41,7 +43,7 @@ button {
 
 h1.temp {
     margin: 0;
-    margin-bottom: .25em;
+    margin-bottom: 0.25em;
 }
 
 input.search-bar {
@@ -49,47 +51,36 @@ input.search-bar {
     padding: 0.5em 1em;
     outline: none;
     border-radius: 18px;
-    background: #7c7c7c2b;
-    color: white;
-    font-family: inherit;
-}
-
-button:hover {
-    background: #7c7c7c6b;
-}
-
-input.search-bar {
-    margin: 0.5em;
-    padding: 0.5em 1em;
-    outline: none;
-    border-radius: 18px;
-    background: #7c7c7c2b;
+    background: rgba(124, 124, 124, 0.17);
     color: white;
     font-family: inherit;
     font-size: 120%;
     width: calc(100% - 100px);
 }
 
+button:hover {
+    background: rgba(124, 124, 124, 0.42);
+}
+
 .description {
     text-transform: capitalize;
 }
 
-.flex{
+.flex {
     display: flex;
     align-items: center;
 }
 
-.weather.loading{
+.weather.loading {
     visibility: hidden;
     max-height: 0px;
     position: relative;
 }
 
-.weather.loading:after{
+.weather.loading:after {
     visibility: visible;
-    
     color: white;
     position: absolute;
     top: 0;
-    left:20px;
+    left: 20px;
 }
